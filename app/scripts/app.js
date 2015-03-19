@@ -31,7 +31,7 @@ angular
       })
       .when('/newitem', {
         templateUrl: 'views/newitem.html',
-        controller: 'NewitemCtrl'
+        controller: 'ItemsCtrl'
       })
       .when('/about', {
         templateUrl: 'views/about.html',
