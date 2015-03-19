@@ -1,23 +1,32 @@
-
 <div class="container">
     <h2 class="page-header "><i class="fa fa-gamepad fa-lg"></i>  New Item </h2>
-    <div>
-        {{name}}<br /> 
-        {{image}}<br /> 
-        {{description}}
-    </div>
     <div class="row">
         <div class="col-md-4">
+            <form ng-submit="AddItem()">
+                Enter text and hit enter:
+                <input type="text" ng-model="name" name="text" />
+                <input type="text" ng-model="image" name="image" />
+                <input type="text" ng-model="description" name="description" />
+                <input type="submit" id="submit" value="Submit" />
+                <pre>
+{{name}}
+{{image}}
+{{description}}
+
+{{items}}
+                </pre>
+            </form>
+            <!-- 
             <div class="form-login">
                 <input type="text" id="itemName" ng-model="name" class="form-control input-sm chat-input" placeholder="Name" /></br>
                 <input type="text" id="itemImage" ng-model="image" class="form-control input-sm chat-input" placeholder="Image" /></br>
                 <textarea rows="4" id="itemDescription" ng-model="description" cols="50" class="form-control input-sm chat-input" placeholder="Description"></textarea></br>
                 <div class="wrapper">
                     <span class="group-btn">
-	                    <a href="#newitem" class="btn btn-warning btn-md" ng-click="AddItem()" >ADD <i class="fa fa-plus"></i></a>
-	                </span>
+                        <a href="#newitem" class="btn btn-warning btn-md" ng-click="AddItem()" >ADD <i class="fa fa-plus"></i></a>
+                    </span>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>
