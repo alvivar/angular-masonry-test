@@ -3,7 +3,7 @@
 	<a href="#newitem" class="btn btn-warning btn-md">ADD <i class="fa fa-plus"></i></a>
     <section class="comment-list">
       <!-- Items Repeater -->
-      <article class="row">
+      <article class="row" ng-repeat="item in items">
         <div class="col-md-2 col-sm-2 hidden-xs">
           <figure class="thumbnail">
             <img class="img-responsive" src='{{item.image}}' />
