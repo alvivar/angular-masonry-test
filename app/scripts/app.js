@@ -25,6 +25,10 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/items', {
+        templateUrl: 'views/items.html',
+        controller: 'ItemsCtrl'
+      })
       .when('/newitem', {
         templateUrl: 'views/newitem.html',
         controller: 'NewitemCtrl'

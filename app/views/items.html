@@ -1,0 +1,27 @@
+<div class="container">
+	<h2 class="page-header">Items </h2>
+	<a href="#newitem" class="btn btn-warning btn-md">ADD <i class="fa fa-plus"></i></a>
+    <section class="comment-list">
+      <!-- Items Repeater -->
+      <article class="row">
+        <div class="col-md-2 col-sm-2 hidden-xs">
+          <figure class="thumbnail">
+            <img class="img-responsive" src='{{item.image}}' />
+            <figcaption class="text-center">{{item.name}}</figcaption>
+          </figure>
+        </div>
+        <div class="col-md-10 col-sm-10">
+          <div class="panel panel-default arrow left">
+            <div class="panel-body">
+              <div class="comment-post">
+                <p>
+                  {{item.description}}
+                </p>
+              </div>
+              <p class="text-right"><a href="#" class="btn btn-default btn-sm"><i class="fa fa-view"></i> ver</a></p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+</div>

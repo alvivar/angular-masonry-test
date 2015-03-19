@@ -9,6 +9,7 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -21,46 +22,46 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
+    <div class="container">
+      <div class="col-md-3 sidebar">
+        <div class="nav-side-menu">
+          <div class="brand">Brand Logo</div>
+          <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"> </i>
 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
+          <div class="menu-list">
 
-            <a class="navbar-brand" href="#/">yotest</a>
-          </div>
+            <ul id="menu-content" class="menu-content collapse out">
+              <li>
+                <a href="#/">
+                  <i class="fa fa-dashboard fa-lg"></i> Dashboard
+                </a>
+              </li>
 
-          <div class="collapse navbar-collapse" id="js-navbar-collapse">
+              <li  data-toggle="collapse" data-target="#products" class="collapsed active">
+                <a href="#items"><i class="fa fa-gift fa-lg"></i> Items <span class="arrow"></span></a>
+              </li>
+              <ul class="sub-menu collapse" id="products">
+                <li class="active"><a href="#items">Stock</a></li>
+                <li><a href="#newitem">Add New</a></li>
+              </ul>
+              <li>
+                <a href="#about">
+                  <i class="fa fa-about fa-lg"></i> About
+                </a>
+              </li>
 
-            <ul>
-              <li> <a href="#">a</a> </li>
-              <li><a href="#newitem">a</a> </li>
-              <li> <a href="#about">a</a> </li>
+
             </ul>
-
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="container">
-    <div ng-view=""></div>
-    </div>
-
-    <div class="footer">
-      <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+      <div class="col-md-9">
+        <div ng-view=""> </div>
       </div>
     </div>
 
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID
      <script>
        !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
        (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
@@ -70,7 +71,8 @@
        ga('create', 'UA-XXXXX-X');
        ga('send', 'pageview');
     </script>
-
+    -->
+    
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -101,9 +103,9 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/controllers/newitem.js"></script>
+        <script src="scripts/controllers/items.js"></script>
         <!-- endbuild -->
 </body>
 </html>
