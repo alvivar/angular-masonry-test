@@ -1,12 +1,42 @@
+
 .container{
   width: 100% !important;
   padding: 0;
 
 }
 
+.page-header {
+  padding: 20px;
+  margin: 0;
+  border-bottom: 4px solid;
+  border-color: rgba(255, 0, 63,0.95);
+  background: rgba(0,0,0,0.6);
+  box-shadow: 0 2px 0 rgba(0,0,0,0.45);
+  position: absolute;
+  width: 100%;
+  left: 0%;
+  color: yellow;
+  top: 0;
+}
+
+.item {
+  padding: 0px;
+  margin-bottom: 14px;
+}
 .sidebar {
   margin: 0;
-  padding: 0 1% 0 0;
+  padding: 0;
+  position: fixed;
+  height: 100%;
+}
+
+.fa-lg {
+  vertical-align: 5%;
+  padding-right: 1%;
+}
+
+.content {
+  padding-top: 120px;
 }
 
 .nav-side-menu {
@@ -27,6 +57,7 @@
   display: block;
   text-align: center;
   font-size: 14px;
+  padding-top: 10px;
 }
 .nav-side-menu .toggle-btn {
   display: none;
@@ -153,6 +184,7 @@
 body {
   margin: 0px;
   padding: 0px;
+  background: gold;
 }
 
 
@@ -180,7 +212,7 @@ body {
   right: 16px;
 }
 .comment-list .panel .panel-heading .panel-body {
-  padding-top: 6px;
+  padding: 0 10px;
 }
 .comment-list figcaption {
   /*For wrapping text in thumbnail*/

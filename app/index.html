@@ -9,6 +9,7 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -22,9 +23,9 @@
 
     <!-- Add your site or application content here -->
     <div class="container">
-      <div class="col-md-3 sidebar">
+      <div class="col-md-2 sidebar">
         <div class="nav-side-menu">
-          <div class="brand">Brand Logo</div>
+          <div class="brand"><img src="http://gekomachine.com/img/logos/img_logo_gekomachine.png" alt="LOGO"></div>
           <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"> </i>
 
           <div class="menu-list">
@@ -32,12 +33,12 @@
             <ul id="menu-content" class="menu-content collapse out">
               <li>
                 <a href="#/">
-                  <i class="fa fa-dashboard fa-lg"></i> Dashboard
+                  <i class="fa fa-cubes fa-lg"></i> Dashboard
                 </a>
               </li>
 
               <li  data-toggle="collapse" data-target="#products" class="collapsed active">
-                <a href="#items"><i class="fa fa-gift fa-lg"></i> Items <span class="arrow"></span></a>
+                <a href="#items"><i class="fa fa-gamepad fa-lg"></i> Items <span class="arrow"></span></a>
               </li>
               <ul class="sub-menu collapse" id="products">
                 <li class="active"><a href="#items">Stock</a></li>
@@ -45,7 +46,7 @@
               </ul>
               <li>
                 <a href="#about">
-                  <i class="fa fa-about fa-lg"></i> About
+                  <i class="fa fa-users fa-lg"></i>  About
                 </a>
               </li>
 
@@ -55,7 +56,7 @@
         </div>
       </div>
 
-      <div class="col-md-9">
+      <div class="col-md-10 col-md-offset-2 content">
         <div ng-view=""> </div>
       </div>
     </div>

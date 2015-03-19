@@ -1,28 +1,22 @@
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
 <div class="container">
-    <h2 class="page-header">Add new Item</h2>
+    <h2 class="page-header "><i class="fa fa-gamepad fa-lg"></i>  New Item </h2>
     <div>
-        {{name}}
-        <br /> {{image}}
-        <br /> {{description}}
+        {{name}}<br /> 
+        {{image}}<br /> 
+        {{description}}
     </div>
     <div class="row">
         <div class="col-md-4">
             <div class="form-login">
-                <form ng-submit="AddItem()">
-                    <input type="text" id="itemName" ng-model="name" class="form-control input-sm chat-input" placeholder="Name" />
-                    </br>
-                    <input type="text" id="itemImage" ng-model="image" class="form-control input-sm chat-input" placeholder="Image" />
-                    </br>
-                    <textarea rows="4" id="itemDescription" ng-model="description" cols="50" class="form-control input-sm chat-input" placeholder="Description">
-                    </textarea>
-                    </br>
-                    <div class="wrapper">
-                        <span class="group-btn">
-                        <a href="#" class="btn btn-warning btn-md">ADD <i class="fa fa-plus"></i></a>
-                    </span>
-                    </div>
-                </form>
+                <input type="text" id="itemName" ng-model="name" class="form-control input-sm chat-input" placeholder="Name" /></br>
+                <input type="text" id="itemImage" ng-model="image" class="form-control input-sm chat-input" placeholder="Image" /></br>
+                <textarea rows="4" id="itemDescription" ng-model="description" cols="50" class="form-control input-sm chat-input" placeholder="Description"></textarea></br>
+                <div class="wrapper">
+                    <span class="group-btn">
+	                    <a href="#newitem" class="btn btn-warning btn-md" ng-click="AddItem()" >ADD <i class="fa fa-plus"></i></a>
+	                </span>
+                </div>
             </div>
         </div>
     </div>

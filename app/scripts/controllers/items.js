@@ -14,7 +14,7 @@ angular.module('yotestApp')
         $scope.items = [{
             name: 'Nombre lol 1',
             image: 'http://placekitten.com/g/300/300',
-            description: 'Description lol 1'
+            description: 'Description lol 1 Description lol 1 Description lol 1 Description lol 1 Description lol 1 Description lol 1 '
         }, {
             name: 'Nombre lol 2 ',
             image: 'http://placekitten.com/g/300/300',
@@ -34,22 +34,15 @@ angular.module('yotestApp')
         }];
 
 
-        $scope.name = '';
-        $scope.description = '';
-        $scope.image = '';
-
-
         $scope.AddItem = function() {
-
-            $scope.items.push({
-                'name': $scope.name,
-                'image': $scope.image,
-                'description': $scope.description
-            });
 
             $scope.name = '';
             $scope.description = '';
             $scope.image = '';
         };
+
+        $scope.name = '';
+        $scope.description = '';
+        $scope.image = '';
 
     });
