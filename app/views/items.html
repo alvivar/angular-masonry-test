@@ -1,27 +1,30 @@
 <div class="container">
-	<h2 class="page-header"><i class="fa fa-gamepad fa-lg"></i> Items<a href="#newitem" class="btn btn-success btn-md col-md-offset-1">ADD <i class="fa fa-plus "></i></a></h2>
-	
+    <h2 class="page-header"><i class="fa fa-gamepad fa-lg"></i> Items<a href="#newitem" class="btn btn-success btn-md col-md-offset-1">ADD <i class="fa fa-plus "></i></a></h2>
     <section class="comment-list">
-      <!-- Items Repeater -->
-      <article class="col-md-4 item" ng-repeat="item in items">
-        <div class="col-md-6 col-sm-6 hidden-xs">
-          <figure class="thumbnail">
-            <img class="img-responsive" src='{{item.image}}' />
-            <figcaption class="text-center">{{item.name}}</figcaption>
-          </figure>
+        <!-- Items Repeater -->
+
+        <div masonry >
+            <div class="masonry-brick " ng-repeat="item in items">
+            	<img class="img-responsive" ng-src='{{item.image}}' />
+                <!-- <div class="item-image">
+                    <figure class="thumbnail">
+                        <img class="img-responsive" ng-src='{{item.image}}' />
+                        <figcaption class="text-center">{{item.name}}</figcaption>
+                    </figure>
+                </div>
+                <div class="item-description">
+                    <div class="panel panel-default arrow left">
+                        <div class="panel-body">
+                            <div class="comment-post">
+                                <p>
+                                    {{item.description}}
+                                </p>
+                            </div>
+                            <span class="pull-right"><a href="#" class="btn btn-info btn-sm"><i class="fa fa-view"></i> ver</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
         </div>
-        <div class="col-md-6 col-sm-6">
-          <div class="panel panel-default arrow left">
-            <div class="panel-body">
-              <div class="comment-post">
-                <p>
-                  {{item.description}}
-                </p>
-              </div>
-              <span class="pull-right"><a href="#" class="btn btn-info btn-sm"><i class="fa fa-view"></i> ver</a></span>
-            </div>
-          </div>
-        </div>
-      </article>
     </section>
 </div>
